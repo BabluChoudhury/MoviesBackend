@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
-    "build": "node src/index.js"                
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod",
+    "dev": "node ./api/index.mjs"               
   },
   "keywords": [],
   "author": "",

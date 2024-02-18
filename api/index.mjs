@@ -1,7 +1,7 @@
 import express from 'express'
-import './DB/conn.js'
+import './DB/conn.mjs'
 import cors from 'cors'
-import { MovieModel } from './DB/Model/schema.js'
+import { MovieModel } from './DB/Model/schema.mjs'
 
 const app=express()
 const port = process.env.PORT || 3000
