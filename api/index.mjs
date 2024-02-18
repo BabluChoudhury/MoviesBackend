@@ -1,6 +1,5 @@
 import express from 'express'
 import './DB/conn.mjs'
-import cors from 'cors'
 import { MovieModel } from './DB/Model/schema.mjs'
 
 const app=express()
