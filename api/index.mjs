@@ -1,13 +1,11 @@
 import express from 'express'
 import './DB/conn.mjs'
-import cors from 'cors'
 import { MovieModel } from './DB/Model/schema.mjs'
 
 const app=express()
 const port = process.env.PORT || 3000
 
 app.use(express.json())
-app.use(cors({origin:"*"}))
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', 'https://movies-frontend-eight.vercel.app');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
