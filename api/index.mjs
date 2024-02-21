@@ -39,6 +39,11 @@ app.post("/v1/movie",async(req,res)=>{
     const result = await MovieModel.find({name})
     res.status(200).json({result})
 })
+app.post("/v1/movieid",async(req,res)=>{
+    const {_id}=req.body
+    const result = await MovieModel.find({_id})
+    res.status(200).json({result})
+})
 app.listen(port,()=>{
     console.log(`server run at http://localhost:${port}`);
 })
